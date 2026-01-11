@@ -1,0 +1,14 @@
+impots      Contains dataset construction scripts.
+net         Contains network model definitions.
+01-BaseModel_ADHD.py         Pre-trained model transferred from ADHD
+01-BaseModel.py                Pre-trained model transferred from ABIDE
+02-stage2_abide.py               Pseudo-label prediction for ABIDE
+02-stage2_adhd.py               Pseudo-label prediction for ADHD
+02-train.py            Fine-tuning the ABIDE model using pseudo-label learning
+02-train_adhd.py       Fine-tuning the ADHD model using pseudo-label learning
+02-3ave_abide.py           Reconstruction of functional connectivity for ABIDE
+02-3ave_adhd.py            Reconstruction of functional connectivity for ADHD
+03-AEabide1-adhd-NOval.py        Classification using reconstructed functional connectivity from ADHD
+03-AEabide1-abide-NOval.py      Classification using reconstructed functional connectivity from ABIDE
+
+Run the scripts sequentially according to the numbered filenames.
